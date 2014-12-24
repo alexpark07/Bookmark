@@ -14,6 +14,8 @@ in .vim/plugin
 drwxrwxr-x  2 alex alex   4096 Sep 21 21:08 neocomplete
 -rw-rw-r--  1 alex alex   2724 Sep 21 21:08 neocomplete.vim
 ```
+
+```
 syntax on
 "colorscheme evening
 colorscheme koehler

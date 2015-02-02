@@ -2,4 +2,10 @@ source list
 
 emdebian (cross-compile)
 
-deb http://www.emdebian.org/debian/ stable main
+deb http://emdebian.org/debian/ stable main
+deb http://ftp.us.debian.org/debian/ stable main contrib non-free
+
+```
+wget http://ftp.kr.debian.org/debian/pool/main/g/gmp/libgmp3c2_4.3.2+dfsg-1_amd64.deb
+sudo dpkg -i libgmp3c2_4.3.2+dfsg-1_amd64.deb
+```

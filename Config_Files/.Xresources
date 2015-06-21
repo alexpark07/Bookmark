@@ -1,11 +1,40 @@
-! terminal specific settings --------------------------------------------------
+UXTerm*font: Terminus-14
+XTerm*font: Terminus-14
 
-XTerm*utf8: 1
-XTerm*faceName: Inconsolata
-XTerm*faceSize: 11
-xterm*selectToClipboard: true
+!Xtf.antialias: false
+!XTerm*faceName: NanumGothicCoding
+!UXTerm*faceName: NanumGothicCoding
+!XTerm*faceSize: 10
+!UXTerm*faceSize: 10
+!Xft.dpi: 90
+!
+Xft: INCONSOLATA fonts
+urxvt.font: xft:inconsolata,xft:NanumGothic:pixelsize=8:antialias=true:hinting=true
+urxvt.boldFont: xft:inconsolata:bold,xft:NanumGothic:bold:pixelsize=8:antialias=true:hinting=true
 
-UXTerm*utf8: 1
-UXTerm*faceName: Inconsolata
-UXTerm*faceSize: 11
-Uxterm*selectToClipboard: true
+! Xft: MONOFUR fonts
+!urxvt.font: xft:monofur:pixelsize=16:antialias=true:hinting=true
+!urxvt.boldFont: xft:monofur:bold:pixelsize=16:antialias=true:hinting=true
+
+urxvt.imLocale:ko_KR.UTF-8
+urxvt.letterSpace: -1
+urxvt.iso14755: False
+urxvt.iso14755_52: False
+! scrollbar - true (default) or false
+urxvt.scrollBar: false
+! clipboard option
+urxvt.perl-ext-common: default,clipboard
+urxvt.keysym.Shift-Control-C: perl:clipboard:copy
+urxvt.keysym.Shift-Control-V: perl:clipboard:paste
+urxvt.clipboard.copycmd:  xsel -ib
+urxvt.clipboard.pastecmd: xsel -ob
+urxvt.saveLines: 12000
+urxvt.foreground: Green
+urxvt.background: Black
+
+XTerm*selectToClipboard: true
+UXTerm*selectToClipboard: true
+
+!copy and paste trouble
+UXTerm*VT100.translations: #override <Btn1Up>: select-end(PRIMARY, CLIPBOARD, CUT_BUFFER0)
+
